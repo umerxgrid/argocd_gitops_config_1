@@ -3,7 +3,7 @@ myapp:
   myapp:
     image:
       repository: umerjamil16/argocd_test
-      tag: v2
+      tag: v3
   replicas: 2
 service:
   ports:
