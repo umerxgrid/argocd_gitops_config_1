@@ -1,0 +1,13 @@
+kubernetesClusterDomain: cluster.local
+myapp:
+  myapp:
+    image:
+      repository: umerjamil16/argocd_test
+      tag: v2
+  replicas: 2
+service:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  type: ClusterIP
